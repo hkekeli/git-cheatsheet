@@ -1,0 +1,71 @@
+All on git (A designer git cheatsheet) 
+
+Amending a commit without opening vim(text editor):  git commit --amend --no-edit
+To reset author date:   git commit  —-amend --date=now
+To reset author date w/o opening vim:  git commit —-amend —-no-edit —-date=now
+To reset author for last commit: git commit -—amend -—reset-author -—no-edit
+
+
+Git rebase
+
+in case of conflict
+1. fix conflict
+2. git add
+3. git rebase -—continue (No need to commit again) 
+
+
+
+Squashing Commits
+
+1. Git rebase -i branchname
+2. Pick any line and [squash] anything you want to apply to the first line.
+3. Esc + :wq
+4. Edit commit message
+5. Esc + :wq 
+
+
+
+Git stash 
+
+git stash
+git stash list (shows list)
+git stash apply (applies most recent stash)
+git stash apply stash@{n}
+git stash clear (clears all)
+
+
+
+Git Commit 
+
+Amending small updates to last commit
+
+1. Make necessary updates 
+2. git add -A
+3. git commit -—amend -—no-edit 
+4. git push -—force
+
+The third step will add the update to your latest commit 
+
+
+Delete branch 
+
+On local
+git branch -D branch
+On remote
+$ git branch -dr origin/branchname
+
+
+Rename branch 
+
+git branch -m old name new name
+
+
+Git reset (Rewinding changes) 
+
+git reset --hard HEAD^
+
+
+
+Accidentally tracked the wrong files?
+
+git rm -r —-cached filename

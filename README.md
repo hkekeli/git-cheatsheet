@@ -2,7 +2,7 @@
 
 A designer's git cheatsheet.
 
-I wrote this cheatsheet while learning how to use git. It has served as a personal reference many times so I'm making it available here.
+I wrote this cheatsheet while learning to use git. It has served as a personal reference many times so I'm making it available here.
 
 ## Commands included:
 
